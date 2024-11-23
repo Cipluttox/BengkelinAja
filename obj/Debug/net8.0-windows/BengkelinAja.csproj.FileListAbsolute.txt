@@ -1,0 +1,71 @@
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\bin\Debug\net8.0-windows\BengkelinAja.exe
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\bin\Debug\net8.0-windows\BengkelinAja.dll
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\bin\Debug\net8.0-windows\Npgsql.dll
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.csproj.AssemblyReference.cache
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.Properties.Resources.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.DetailPesanan.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.HomePageBengkel.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.HomePage_Pelanggan.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.KelolaDataBengkel__Edit_.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.KelolaDataBengkel__View_.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.Konfirmasi_pembayaran.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.Form1.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.LihatJadwalServis.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.LihatLayananAntarJemput.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.Login.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.Pembayaran.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.Register_Pelanggan.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.RegisterPengelolaBengkel.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.View.RiwayatPemesanan.resources
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.csproj.GenerateResource.cache
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.GeneratedMSBuildEditorConfig.editorconfig
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.AssemblyInfoInputs.cache
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.AssemblyInfo.cs
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.csproj.CoreCompileInputs.cache
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\Bengkeli.782D37E5.Up2Date
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.dll
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\refint\BengkelinAja.dll
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.pdb
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\bin\Debug\net8.0-windows\BengkelinAja.deps.json
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\bin\Debug\net8.0-windows\BengkelinAja.runtimeconfig.json
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\bin\Debug\net8.0-windows\BengkelinAja.pdb
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\BengkelinAja.genruntimeconfig.cache
+E:\Semester 3\PBO\BengkelinAja\BengkelinAja\BengkelinAja\obj\Debug\net8.0-windows\ref\BengkelinAja.dll
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.csproj.AssemblyReference.cache
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.dll
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\refint\BengkelinAja.dll
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.pdb
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\bin\Debug\net8.0-windows\BengkelinAja.exe
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\bin\Debug\net8.0-windows\BengkelinAja.deps.json
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\bin\Debug\net8.0-windows\BengkelinAja.runtimeconfig.json
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\bin\Debug\net8.0-windows\BengkelinAja.dll
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\bin\Debug\net8.0-windows\BengkelinAja.pdb
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.Properties.Resources.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.DetailPesanan.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.HomePageBengkel.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.HomePage_Pelanggan.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.KelolaDataBengkel__Edit_.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.KelolaDataBengkel__View_.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.Konfirmasi_pembayaran.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.Form1.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.LihatJadwalServis.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.LihatLayananAntarJemput.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.Login.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.Pembayaran.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.RegisterPengelolaBengkel.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.Register_Pelanggan.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.Registrasi_Pengelola_Bengke_.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.View.RiwayatPemesanan.resources
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.csproj.GenerateResource.cache
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.AssemblyInfoInputs.cache
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.AssemblyInfo.cs
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\Bengkeli.782D37E5.Up2Date
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\BengkelinAja.genruntimeconfig.cache
+C:\Users\ASUS\Downloads\PBO-Final-Project-Kelompok-4-main\obj\Debug\net8.0-windows\ref\BengkelinAja.dll

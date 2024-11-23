@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "gtNce9usTqU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ASUS\\Downloads\\PBO-Final-Project-Kelompok-4-main\\BengkelinAja.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\npgsql\\8.0.5\\npgsql.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
