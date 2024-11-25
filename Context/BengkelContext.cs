@@ -37,11 +37,11 @@ namespace BengkelinAja.Context
         }
 
         private static string table = "bengkel";
-        public static bool RegisterPengelola(M_Bengkel.DataBengkel pengelolaBaru)
+        public static void RegisterPengelola(M_Bengkel.DataBengkel pengelolaBaru)
         {
             try
             {
-                string query = $"INSERT INTO {table} (nama_bengkel, nama_pemilik, alamat_pemilik, username, password, email, alamat_bengkel, jam_buka, jam_tutup) VALUES(@namaBengkel, @namaPemilik, @alamatPemilik, @username, @password, @email, @noTelp, @alamatBengkel, @jamBuka, @jamTutup)";
+                string query = $"INSERT INTO {table} (nama_bengkel, nama_pemilik, alamat_pemilik, username, password, email, no_telp, alamat_bengkel, jam_buka, jam_tutup) VALUES(@namaBengkel, @namaPemilik, @alamatPemilik, @username, @password, @email, @noTelp, @alamatBengkel, @jamBuka, @jamTutup)";
                 NpgsqlParameter[] parameters =
                 {
                 new NpgsqlParameter("@namaBengkel", NpgsqlDbType.Varchar) { Value = pengelolaBaru.nama_bengkel },
@@ -56,12 +56,66 @@ namespace BengkelinAja.Context
                 new NpgsqlParameter("@jamTutup", NpgsqlDbType.Time) { Value = pengelolaBaru.jam_tutup}
             };
                 commandExecutor(query, parameters);
-                return true;
+                
             }
-            catch (Exception ex)
+            catch
             {
-                Console.WriteLine("Error saat mendaftar: " + ex.Message);
-                return false;
+                MessageBox.Show("Error saat mendaftar: ");
+                
+            }
+        }
+
+        public static class BengkelController
+        {
+            // Method untuk update atau menyimpan data bengkel ke database
+            public static bool UpdateDataBengkel(
+                string namaBengkel,
+                bool servisRutin,
+                bool gantiOli,
+                bool servisGaransi,
+                bool servisDarurat,
+                string alamat,
+                string jamBuka,
+                string jamTutup)
+            {
+                try
+                {
+                    // Gabungkan layanan menjadi satu string (misalnya: "Servis Rutin, Ganti Oli")
+                    List<string> layanan = new List<string>();
+                    if (servisRutin) layanan.Add("Servis Rutin");
+                    if (gantiOli) layanan.Add("Ganti Oli");
+                    if (servisGaransi) layanan.Add("Servis Garansi");
+                    if (servisDarurat) layanan.Add("Servis Darurat");
+
+                    string layananStr = string.Join(", ", layanan);
+
+                    // Query untuk update data di database
+                    string query = $"UPDATE bengkel SET " +
+                                   "layanan = @layanan, " +
+                                   "alamat = @alamat, " +
+                                   "jam_buka = @jamBuka, " +
+                                   "jam_tutup = @jamTutup " +
+                                   "WHERE nama_bengkel = @namaBengkel";
+
+                    // Parameter query
+                    NpgsqlParameter[] parameters =
+                    {
+            new NpgsqlParameter("@namaBengkel", NpgsqlDbType.Varchar) { Value = namaBengkel },
+            new NpgsqlParameter("@layanan", NpgsqlDbType.Varchar) { Value = layananStr },
+            new NpgsqlParameter("@alamat", NpgsqlDbType.Varchar) { Value = alamat },
+            new NpgsqlParameter("@jamBuka", NpgsqlDbType.Time) { Value = TimeSpan.Parse(jamBuka) },
+            new NpgsqlParameter("@jamTutup", NpgsqlDbType.Time) { Value = TimeSpan.Parse(jamTutup) }
+        };
+
+                    // Eksekusi query menggunakan fungsi commandExecutor
+                    commandExecutor(query, parameters);
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error saat mengupdate data bengkel: {ex.Message}");
+                    return false;
+                }
             }
         }
     }

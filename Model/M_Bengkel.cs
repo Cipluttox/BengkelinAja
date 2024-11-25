@@ -60,7 +60,12 @@ namespace BengkelinAja.Model
             [Key]
             public int id_layanan { get; set; }
             [Required]
-            public string nama_layanan { get; set; }
+            public List<string> nama_layanan { get; set; }
         }
+
+    
+        
+        
+        
     } 
 }

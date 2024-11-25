@@ -33,13 +33,14 @@ namespace BengkelinAja.View
                     username = US_Pengelola.Text,
                     password = PW_Pengelola.Text,
                     email = E_Pengelola.Text,
+                    no_telp = NT_Pengelola.Text,
                     alamat_bengkel = AB_Pengelola.Text,
                     jam_buka = TimeOnly.Parse(JB_Pengelola.Text),
                     jam_tutup = TimeOnly.Parse(JT_Pengelola.Text)
                 };
 
                 BengkelContext.RegisterPengelola(pengelolaBaru);
-                MessageBox.Show("Berhasil register");
+                
 
                 this.DialogResult = DialogResult.OK;
                 this.Hide();
@@ -51,6 +52,7 @@ namespace BengkelinAja.View
             {
                 MessageBox.Show("Format jam buka/tutup tidak valid. Gunakan format HH:mm.");
             }
+            MessageBox.Show("Berhasil register");
         }
 
 

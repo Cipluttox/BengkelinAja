@@ -16,5 +16,19 @@ namespace BengkelinAja.View
         {
             InitializeComponent();
         }
+
+        private void bt_edit_Click(object sender, EventArgs e)
+        {
+            KelolaDataBengkel__Edit_ editForm = new KelolaDataBengkel__Edit_();
+            editForm.Show();
+            this.Hide();
+        }
+
+        private void bt_kembali_Click(object sender, EventArgs e)
+        {
+            HomePageBengkel homePage = new HomePageBengkel();
+            homePage.Show();
+            this.Hide();
+        }
     }
 }

@@ -59,5 +59,15 @@ namespace BengkelinAja.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kelola_data_bengkel_Edit {
+            get {
+                object obj = ResourceManager.GetObject("kelola data bengkel Edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
