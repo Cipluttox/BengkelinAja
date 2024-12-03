@@ -14,10 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BengkelinAja
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\Muhammad Irvan Akbar\Documents\BENGKEL 1_12\BengkelinAja\
-=======
-build_property.ProjectDir = E:\Semester 3\PBO\Projek Akhir\
->>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

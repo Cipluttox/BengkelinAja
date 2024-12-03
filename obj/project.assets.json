@@ -185,27 +185,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\asus\\.nuget\\packages\\": {}
+    "C:\\Users\\Muhammad Irvan Akbar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Muhammad Irvan Akbar\\Documents\\BENGKEL 1_12\\BengkelinAja\\BengkelinAja.csproj",
       "projectName": "BengkelinAja",
       "projectPath": "C:\\Users\\Muhammad Irvan Akbar\\Documents\\BENGKEL 1_12\\BengkelinAja\\BengkelinAja.csproj",
       "packagesPath": "C:\\Users\\Muhammad Irvan Akbar\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Muhammad Irvan Akbar\\Documents\\BENGKEL 1_12\\BengkelinAja\\obj\\",
-=======
-      "projectUniqueName": "E:\\Semester 3\\PBO\\Projek Akhir\\BengkelinAja.csproj",
-      "projectName": "BengkelinAja",
-      "projectPath": "E:\\Semester 3\\PBO\\Projek Akhir\\BengkelinAja.csproj",
-      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "E:\\Semester 3\\PBO\\Projek Akhir\\obj\\",
->>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Muhammad Irvan Akbar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -260,8 +252,16 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Muhammad Irvan Akbar\\Documents\\BENGKEL 1_12\\BengkelinAja\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

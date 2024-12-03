@@ -53,7 +53,6 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(655, 188);
             dataGridView1.TabIndex = 1;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // bt_edit
             // 
@@ -79,7 +78,6 @@
             bt_kembali.TabIndex = 3;
             bt_kembali.Text = "Kembali";
             bt_kembali.UseVisualStyleBackColor = false;
-            bt_kembali.Click += bt_kembali_Click;
             // 
             // KelolaDataBengkel__View_
             // 

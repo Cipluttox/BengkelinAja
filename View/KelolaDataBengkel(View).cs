@@ -17,85 +17,10 @@ namespace BengkelinAja.View
         public KelolaDataBengkel__View_()
         {
             InitializeComponent();
-<<<<<<< HEAD
+
             LoadBengkelData();
-=======
-            //this.Load += KelolaDataBengkel__View__Load;
-            //this.Load += new System.EventHandler(this.KelolaDataBengkel__View__Load);
-            LoadBengkelData();
+
         }
-
-        private void KelolaDataBengkel__View__Load(object sender, EventArgs e)
-        {
-            LoadBengkelData(); // Memuat data ke DataGridView saat form dibuka
-        }
-
-
-        private void LoadBengkelData()
-        {
-            try
-            {
-                var dataTable = BengkelContext.GetAllBengkel();
-                if (dataTable != null && dataTable.Rows.Count > 0)
-                {
-                    dataGridView1.DataSource = dataTable; // Asumsikan nama DataGridView adalah dataGridView1
-                    FormatGrid();
-                }
-                else
-                {
-                    MessageBox.Show("Tidak ada data untuk ditampilkan.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Terjadi kesalahan: " + ex.Message);
-            }
-        }
-
-        private void FormatGrid()
-        {
-            // Atur kolom-kolom DataGridView agar lebih rapi
-            dataGridView1.Columns["ID Bengkel"].HeaderText = "ID Bengkel";
-            dataGridView1.Columns["Nama Bengkel"].HeaderText = "Nama Bengkel";
-            dataGridView1.Columns["Nama Pemilik"].HeaderText = "Nama Pemilik";
-            dataGridView1.Columns["Alamat Bengkel"].HeaderText = "Alamat";
-            dataGridView1.Columns["No. Telepon"].HeaderText = "Telepon";
-            dataGridView1.Columns["Email"].HeaderText = "Email";
-            dataGridView1.Columns["Jam Buka"].HeaderText = "Jam Buka";
-            dataGridView1.Columns["Jam Tutup"].HeaderText = "Jam Tutup";
-            dataGridView1.Columns["Layanan"].HeaderText = "Daftar Layanan";
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
->>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
-        }
-
-        private void KelolaDataBengkel__View__Load(object sender, EventArgs e)
-        {
-            LoadBengkelData(); // Memuat data ke DataGridView saat form dibuka
-        }
-
-
-        //private void LoadBengkelData()
-        //{
-        //    try
-        //    {
-        //        int bengkelId = LoginSession.BengkelId;
-
-        //        var dataTable = BengkelContext.GetAllBengkel();
-        //        if (dataTable != null && dataTable.Rows.Count > 0)
-        //        {
-        //            dataGridView1.DataSource = dataTable; 
-        //            FormatGrid();
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Tidak ada data untuk ditampilkan.");
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Terjadi kesalahan: " + ex.Message);
-        //    }
-        //}
 
         private void LoadBengkelData()
         {
@@ -116,12 +41,12 @@ namespace BengkelinAja.View
                 {
                     MessageBox.Show("Tidak ada data untuk ditampilkan.");
                 }
-        }
+            }
             catch (Exception ex)
             {
                 MessageBox.Show("Terjadi kesalahan: " + ex.Message);
             }
-}
+        }
 
 
         private void FormatGrid()
@@ -156,7 +81,12 @@ namespace BengkelinAja.View
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
+
+
+
     }
+
 }
+    

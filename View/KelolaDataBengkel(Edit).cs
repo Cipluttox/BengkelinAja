@@ -67,13 +67,12 @@ namespace BengkelinAja.View
         {
 
         }
-<<<<<<< HEAD
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
-=======
->>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
+
     }
 }

@@ -1,18 +1,19 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "uSUGnfn8obg=",
   "success": true,
   "projectFilePath": "C:\\Users\\Muhammad Irvan Akbar\\Documents\\BENGKEL 1_12\\BengkelinAja\\BengkelinAja.csproj",
-=======
-  "dgSpecHash": "SPf5Q87fCng=",
-  "success": true,
-  "projectFilePath": "E:\\Semester 3\\PBO\\Projek Akhir\\BengkelinAja.csproj",
->>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
   "expectedPackageFiles": [
-    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
-    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
-    "C:\\Users\\asus\\.nuget\\packages\\npgsql\\9.0.1\\npgsql.9.0.1.nupkg.sha512"
+    "C:\\Users\\Muhammad Irvan Akbar\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Muhammad Irvan Akbar\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Muhammad Irvan Akbar\\.nuget\\packages\\npgsql\\9.0.1\\npgsql.9.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Muhammad Irvan Akbar\\Documents\\BENGKEL 1_12\\BengkelinAja\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
