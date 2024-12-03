@@ -88,7 +88,7 @@
             bt_RegistPelanggan.Name = "bt_RegistPelanggan";
             bt_RegistPelanggan.Size = new Size(218, 37);
             bt_RegistPelanggan.TabIndex = 3;
-            bt_RegistPelanggan.Text = "Register_Pelanggan";
+            bt_RegistPelanggan.Text = "Register Pelanggan";
             bt_RegistPelanggan.UseVisualStyleBackColor = false;
             bt_RegistPelanggan.Click += bt_RegistPelanggan_Click;
             // 

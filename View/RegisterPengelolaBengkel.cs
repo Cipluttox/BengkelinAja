@@ -1,10 +1,13 @@
 ﻿using BengkelinAja.Context;
 using BengkelinAja.Model;
+using static BengkelinAja.Model.M_Bengkel;
+using static BengkelinAja.View.Login;
 
 namespace BengkelinAja.View
 {
     public partial class RegisterPengelolaBengkel : Form
     {
+
         public RegisterPengelolaBengkel()
         {
             InitializeComponent();
@@ -39,20 +42,33 @@ namespace BengkelinAja.View
                     jam_tutup = TimeOnly.Parse(JT_Pengelola.Text)
                 };
 
+                string username = US_Pengelola.Text;
+                string password = PW_Pengelola.Text;
+
                 BengkelContext.RegisterPengelola(pengelolaBaru);
-                
+                int id_bengkel = BengkelContext.LoginBengkelGetId(username, password);
 
-                this.DialogResult = DialogResult.OK;
+                List<int> listLayanan = new List<int>();
+                if (L1_ServisRutin.Checked) { listLayanan.Add(1); }
+                if (L2_GantiOli.Checked) { listLayanan.Add(2); }
+                if (L3_ServisGaransi.Checked) { listLayanan.Add(3); }
+                if (L5_ServisDarurat.Checked) { listLayanan.Add(4); }
+
+                for (int i = 0; i < listLayanan.Count; i++) { BengkelContext.TambahLayananBengkel(id_bengkel, listLayanan[i]); }
+
+                MessageBox.Show("Berhasil register");
                 this.Hide();
-
-                HomePageBengkel daftarPengelola = new HomePageBengkel();
-                daftarPengelola.Show();
+                Login HalLogin = new Login();
+                HalLogin.Show();
             }
-            catch (FormatException)
+            catch (FormatException ex)
             {
-                MessageBox.Show("Format jam buka/tutup tidak valid. Gunakan format HH:mm.");
+                MessageBox.Show("Format jam buka/tutup tidak valid. Gunakan format HH:mm. " + ex.Message, "Format Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            MessageBox.Show("Berhasil register");
+            catch (Exception ex)
+            {
+                MessageBox.Show("Terjadi kesalahan saat mendaftarkan pengelola baru: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 
@@ -89,6 +105,36 @@ namespace BengkelinAja.View
         private void NB_Pengelola_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void L2_Pengelola_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void L5_Pengelola_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void L1_Pengelola_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void L3_Pengelola_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void JT_Pengelola_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            
         }
     }
 }

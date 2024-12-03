@@ -31,17 +31,26 @@ namespace BengkelinAja
         }
         private void bt_RegistPelanggan_Click(object sender, EventArgs e)
         {
-            Register_Pelanggan halPesanan = new Register_Pelanggan();
-            halPesanan.Show();
-            this.Hide();
+            this.Show();
+            Register_Pelanggan halPelanggan = new Register_Pelanggan();
+            if (halPelanggan.ShowDialog() == DialogResult.OK) { 
+                //this.Close(); 
+            }
+            else { this.Show(); }
         }
 
         private void bt_RegistBengkel_Click(object sender, EventArgs e)
         {
             this.Hide();
             RegisterPengelolaBengkel HalRegistBengkel = new RegisterPengelolaBengkel();
-            HalRegistBengkel.ShowDialog();
-            this.Close();
+            if (HalRegistBengkel.ShowDialog() == DialogResult.OK)
+            {
+                //this.Close(); // Tutup hanya jika pendaftaran berhasil
+            }
+            else
+            {
+                this.Show(); // Kembali ke landing page jika pendaftaran gagal/dibatalkan
+            }
         }
 
     } 

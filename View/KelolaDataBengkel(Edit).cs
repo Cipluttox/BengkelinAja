@@ -22,15 +22,21 @@ namespace BengkelinAja.View
 
         private void bt_simpan_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text))
+            {
+                MessageBox.Show("Nama bengkel dan alamat tidak boleh kosong.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             string namaBengkel = textBox1.Text;
             string alamat = textBox2.Text;
             string jamBuka = textBox3.Text;
             string jamTutup = textBox4.Text;
 
-            bool servisRutin = C1_servisRutin.Checked;
-            bool gantiOli = C2_gantiOli.Checked;
-            bool servisGaransi = C3_servisGaransi.Checked;
-            bool servisDarurat = C4_servisDarurat.Checked;
+            bool servisRutin = L1_Pengelola.Checked;
+            bool gantiOli = L2_Pengelola.Checked;
+            bool servisGaransi = L3_Pengelola.Checked;
+            bool servisDarurat = L5_Pengelola.Checked;
 
             bool isSuccess = BengkelController.UpdateDataBengkel(namaBengkel, servisRutin, gantiOli, servisGaransi, servisDarurat, alamat, jamBuka, jamTutup);
 
@@ -50,6 +56,21 @@ namespace BengkelinAja.View
             KelolaDataBengkel__View_ showData = new KelolaDataBengkel__View_();
             showData.Show();
             this.Close();
+        }
+
+        private void C3_servisGaransi_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void L5_Pengelola_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -7,7 +7,9 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using winform_mvc.App.Core;
+using static BengkelinAja.View.Login;
 
 namespace BengkelinAja.Context
 {
@@ -33,15 +35,17 @@ namespace BengkelinAja.Context
                 throw new Exception("Error during login: " + ex.Message);
             }
 
-
         }
 
-        private static string table = "bengkel";
         public static void RegisterPengelola(M_Bengkel.DataBengkel pengelolaBaru)
         {
             try
             {
-                string query = $"INSERT INTO {table} (nama_bengkel, nama_pemilik, alamat_pemilik, username, password, email, no_telp, alamat_bengkel, jam_buka, jam_tutup) VALUES(@namaBengkel, @namaPemilik, @alamatPemilik, @username, @password, @email, @noTelp, @alamatBengkel, @jamBuka, @jamTutup)";
+                string query = $@"
+                    INSERT INTO bengkel 
+                    (nama_bengkel, nama_pemilik, alamat_pemilik, username, password, email, no_telp, alamat_bengkel, jam_buka, jam_tutup) 
+                    VALUES(@namaBengkel, @namaPemilik, @alamatPemilik, @username, @password, @email, @noTelp, @alamatBengkel, @jamBuka, @jamTutup)";
+                //string query = $"INSERT INTO {table} (nama_bengkel, nama_pemilik, alamat_pemilik, username, password, email, no_telp, alamat_bengkel, jam_buka, jam_tutup) VALUES(@namaBengkel, @namaPemilik, @alamatPemilik, @username, @password, @email, @noTelp, @alamatBengkel, @jamBuka, @jamTutup)";
                 NpgsqlParameter[] parameters =
                 {
                 new NpgsqlParameter("@namaBengkel", NpgsqlDbType.Varchar) { Value = pengelolaBaru.nama_bengkel },
@@ -56,14 +60,102 @@ namespace BengkelinAja.Context
                 new NpgsqlParameter("@jamTutup", NpgsqlDbType.Time) { Value = pengelolaBaru.jam_tutup}
             };
                 commandExecutor(query, parameters);
-                
             }
             catch
             {
                 MessageBox.Show("Error saat mendaftar: ");
-                
             }
         }
+
+        public static int LoginBengkelGetId(string username, string password)
+        {
+            string loginQuery = "SELECT id_bengkel FROM bengkel WHERE username = @username AND password = @password";
+            NpgsqlParameter[] loginParams = {
+            new NpgsqlParameter("@username", NpgsqlDbType.Varchar) { Value = username },
+            new NpgsqlParameter("@password", NpgsqlDbType.Varchar) { Value = password }
+            
+            };
+
+            DataTable result = queryExecutor(loginQuery, loginParams);
+
+            if (result.Rows.Count > 0)
+            {
+                LoginSession.BengkelId = Convert.ToInt32(result.Rows[0]["id_bengkel"]); // Simpan id_bengkel
+                return LoginSession.BengkelId;
+            }
+
+            throw new Exception("Username atau password salah.");
+        }
+
+
+        public static void TambahLayananBengkel(int id_bengkel, int id_layanan)
+        {
+            try
+            {
+                string query = $@"
+                                 INSERT INTO detail_layanan_bengkel (id_bengkel, id_layanan) 
+                                 VALUES (@id_bengkel, @id_layanan)";
+                NpgsqlParameter[] parameters =
+                {
+                new NpgsqlParameter("@id_bengkel", NpgsqlDbType.Integer) { Value = id_bengkel},
+                new NpgsqlParameter("@id_layanan", NpgsqlDbType.Integer) { Value = id_layanan}
+                
+            };
+                commandExecutor(query, parameters);
+            }
+            catch
+            {
+                MessageBox.Show("Error when insert layanan detected");
+            }
+        }
+
+        public static DataTable GetBengkelWithLayanan(int bengkelId)
+        {
+            try
+            {
+                // Query untuk mengambil data bengkel beserta layanan
+                string query = @"
+                    SELECT b.id_bengkel, b.nama_bengkel, b.nama_pemilik, b.alamat_bengkel, b.no_telp, b.email, b.jam_buka, b.jam_tutup,
+                        string_agg(l.nama_layanan, ', ') AS layanan
+                    FROM bengkel b
+                    LEFT JOIN detail_layanan_bengkel dlb ON b.id_bengkel = dlb.id_bengkel
+                    LEFT JOIN layanan l ON dlb.id_layanan = l.id_layanan
+                    WHERE b.id_bengkel = @id_bengkel
+                    GROUP BY b.id_bengkel, b.nama_bengkel, b.nama_pemilik, b.alamat_bengkel, b.no_telp, b.email, b.jam_buka, b.jam_tutup";
+
+                NpgsqlParameter[] parameters = {
+                    new NpgsqlParameter("@id_bengkel", NpgsqlDbType.Integer) { Value = bengkelId }
+            };
+
+                return queryExecutor(query, parameters);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                throw new Exception("Failed to load data for the current bengkel.");
+            }
+        }
+
+
+        public static DataTable GetBengkelByPengelola(int bengkelId)
+        {
+            try
+            {
+                string query = "SELECT * FROM bengkel WHERE id_bengkel = @id_bengkel";
+                NpgsqlParameter[] parameters = {
+            new NpgsqlParameter("@id_bengkel", NpgsqlDbType.Integer) { Value = bengkelId }
+        };
+
+                return queryExecutor(query, parameters);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                throw new Exception("Failed to load data for the current bengkel.");
+            }
+        }
+
+
 
         public static class BengkelController
         {
@@ -92,7 +184,7 @@ namespace BengkelinAja.Context
                     // Query untuk update data di database
                     string query = $"UPDATE bengkel SET " +
                                    "layanan = @layanan, " +
-                                   "alamat = @alamat, " +
+                                   "alamat_bengkel = @alamat, " +
                                    "jam_buka = @jamBuka, " +
                                    "jam_tutup = @jamTutup " +
                                    "WHERE nama_bengkel = @namaBengkel";
@@ -116,6 +208,20 @@ namespace BengkelinAja.Context
                     Console.WriteLine($"Error saat mengupdate data bengkel: {ex.Message}");
                     return false;
                 }
+            }
+        }
+
+        public static DataTable GetAllBengkel()
+        {
+            try
+            {
+                string query = $"SELECT id_bengkel, nama_bengkel, nama_pemilik, alamat_bengkel, no_telp, email, jam_buka, jam_tutup FROM bengkel";
+                return queryExecutor(query); // Menggunakan queryExecutor dari DatabaseWrapper
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Gagal mengambil data: " + e.Message);
+                return null;
             }
         }
     }

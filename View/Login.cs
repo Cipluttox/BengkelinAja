@@ -15,7 +15,12 @@ namespace BengkelinAja.View
 
     public partial class Login : Form
     {
-        
+        public static class LoginSession
+        {
+            public static int BengkelId { get; set; }
+        }
+
+
         public Login()
         {
             InitializeComponent();
@@ -41,22 +46,27 @@ namespace BengkelinAja.View
             if (isBengkel)
             {
                 this.Hide();
+                this.DialogResult = DialogResult.OK;
                 HomePageBengkel hpBengkel = new HomePageBengkel();
                 hpBengkel.Show();
-                this.DialogResult = DialogResult.OK;
-                //this.Close();
+                //this.DialogResult = DialogResult.OK;
             }
             else if (isPelanggan)
             {
                 this.Hide();
-                this .DialogResult = DialogResult.OK;
+                this.DialogResult = DialogResult.OK;
                 HomePage_Pelanggan hpPelanggan = new HomePage_Pelanggan();
                 hpPelanggan.Show();
             }
-            else 
+            else
             {
                 MessageBox.Show("Username atau password anda salah");
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

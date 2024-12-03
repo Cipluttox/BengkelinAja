@@ -52,10 +52,10 @@
             AP_Pengelola = new TextBox();
             label11 = new Label();
             PAdd = new Button();
-            L1_Pengelola = new CheckBox();
-            L2_Pengelola = new CheckBox();
-            L3_Pengelola = new CheckBox();
-            L5_Pengelola = new CheckBox();
+            L1_ServisRutin = new CheckBox();
+            L2_GantiOli = new CheckBox();
+            L3_ServisGaransi = new CheckBox();
+            L5_ServisDarurat = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -198,6 +198,7 @@
             JT_Pengelola.Name = "JT_Pengelola";
             JT_Pengelola.Size = new Size(291, 27);
             JT_Pengelola.TabIndex = 15;
+            JT_Pengelola.TextChanged += JT_Pengelola_TextChanged;
             // 
             // US_Pengelola
             // 
@@ -264,60 +265,64 @@
             PAdd.UseVisualStyleBackColor = false;
             PAdd.Click += PAdd_Click;
             // 
-            // L1_Pengelola
+            // L1_ServisRutin
             // 
-            L1_Pengelola.AutoSize = true;
-            L1_Pengelola.BackColor = Color.White;
-            L1_Pengelola.Location = new Point(349, 127);
-            L1_Pengelola.Name = "L1_Pengelola";
-            L1_Pengelola.Size = new Size(107, 24);
-            L1_Pengelola.TabIndex = 25;
-            L1_Pengelola.Text = "Servis Rutin";
-            L1_Pengelola.UseVisualStyleBackColor = false;
+            L1_ServisRutin.AutoSize = true;
+            L1_ServisRutin.BackColor = Color.White;
+            L1_ServisRutin.Location = new Point(352, 128);
+            L1_ServisRutin.Name = "L1_ServisRutin";
+            L1_ServisRutin.Size = new Size(107, 24);
+            L1_ServisRutin.TabIndex = 25;
+            L1_ServisRutin.Text = "Servis Rutin";
+            L1_ServisRutin.UseVisualStyleBackColor = false;
+            L1_ServisRutin.CheckedChanged += L1_Pengelola_CheckedChanged;
             // 
-            // L2_Pengelola
+            // L2_GantiOli
             // 
-            L2_Pengelola.AutoSize = true;
-            L2_Pengelola.BackColor = Color.White;
-            L2_Pengelola.Location = new Point(349, 157);
-            L2_Pengelola.Name = "L2_Pengelola";
-            L2_Pengelola.Size = new Size(89, 24);
-            L2_Pengelola.TabIndex = 26;
-            L2_Pengelola.Text = "Ganti Oli";
-            L2_Pengelola.UseVisualStyleBackColor = false;
+            L2_GantiOli.AutoSize = true;
+            L2_GantiOli.BackColor = Color.White;
+            L2_GantiOli.Location = new Point(352, 154);
+            L2_GantiOli.Name = "L2_GantiOli";
+            L2_GantiOli.Size = new Size(89, 24);
+            L2_GantiOli.TabIndex = 26;
+            L2_GantiOli.Text = "Ganti Oli";
+            L2_GantiOli.UseVisualStyleBackColor = false;
+            L2_GantiOli.CheckedChanged += L2_Pengelola_CheckedChanged;
             // 
-            // L3_Pengelola
+            // L3_ServisGaransi
             // 
-            L3_Pengelola.AutoSize = true;
-            L3_Pengelola.BackColor = Color.White;
-            L3_Pengelola.Location = new Point(501, 128);
-            L3_Pengelola.Name = "L3_Pengelola";
-            L3_Pengelola.Size = new Size(122, 24);
-            L3_Pengelola.TabIndex = 27;
-            L3_Pengelola.Text = "Servis Garansi";
-            L3_Pengelola.UseVisualStyleBackColor = false;
+            L3_ServisGaransi.AutoSize = true;
+            L3_ServisGaransi.BackColor = Color.White;
+            L3_ServisGaransi.Location = new Point(482, 128);
+            L3_ServisGaransi.Name = "L3_ServisGaransi";
+            L3_ServisGaransi.Size = new Size(122, 24);
+            L3_ServisGaransi.TabIndex = 27;
+            L3_ServisGaransi.Text = "Servis Garansi";
+            L3_ServisGaransi.UseVisualStyleBackColor = false;
+            L3_ServisGaransi.CheckedChanged += L3_Pengelola_CheckedChanged;
             // 
-            // L5_Pengelola
+            // L5_ServisDarurat
             // 
-            L5_Pengelola.AutoSize = true;
-            L5_Pengelola.BackColor = Color.White;
-            L5_Pengelola.Location = new Point(501, 157);
-            L5_Pengelola.Name = "L5_Pengelola";
-            L5_Pengelola.Size = new Size(123, 24);
-            L5_Pengelola.TabIndex = 28;
-            L5_Pengelola.Text = "Servis Darurat";
-            L5_Pengelola.UseVisualStyleBackColor = false;
+            L5_ServisDarurat.AutoSize = true;
+            L5_ServisDarurat.BackColor = Color.White;
+            L5_ServisDarurat.Location = new Point(482, 154);
+            L5_ServisDarurat.Name = "L5_ServisDarurat";
+            L5_ServisDarurat.Size = new Size(123, 24);
+            L5_ServisDarurat.TabIndex = 28;
+            L5_ServisDarurat.Text = "Servis Darurat";
+            L5_ServisDarurat.UseVisualStyleBackColor = false;
+            L5_ServisDarurat.CheckedChanged += L5_Pengelola_CheckedChanged;
             // 
             // RegisterPengelolaBengkel
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(882, 596);
-            Controls.Add(L5_Pengelola);
-            Controls.Add(L3_Pengelola);
-            Controls.Add(L2_Pengelola);
-            Controls.Add(L1_Pengelola);
+            Controls.Add(L2_GantiOli);
+            Controls.Add(L1_ServisRutin);
+            Controls.Add(L5_ServisDarurat);
             Controls.Add(PAdd);
+            Controls.Add(L3_ServisGaransi);
             Controls.Add(AP_Pengelola);
             Controls.Add(label11);
             Controls.Add(E_Pengelola);
@@ -372,9 +377,9 @@
         private TextBox AP_Pengelola;
         private Label label11;
         private Button PAdd;
-        private CheckBox L1_Pengelola;
-        private CheckBox L2_Pengelola;
-        private CheckBox L3_Pengelola;
-        private CheckBox L5_Pengelola;
+        private CheckBox L1_ServisRutin;
+        private CheckBox L2_GantiOli;
+        private CheckBox L3_ServisGaransi;
+        private CheckBox L5_ServisDarurat;
     }
 }

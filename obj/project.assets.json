@@ -190,11 +190,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Muhammad Irvan Akbar\\Source\\Repos\\BengkelinAja\\BengkelinAja.csproj",
+      "projectUniqueName": "C:\\Users\\Muhammad Irvan Akbar\\Documents\\BENGKEL 1_12\\BengkelinAja\\BengkelinAja.csproj",
       "projectName": "BengkelinAja",
-      "projectPath": "C:\\Users\\Muhammad Irvan Akbar\\Source\\Repos\\BengkelinAja\\BengkelinAja.csproj",
+      "projectPath": "C:\\Users\\Muhammad Irvan Akbar\\Documents\\BENGKEL 1_12\\BengkelinAja\\BengkelinAja.csproj",
       "packagesPath": "C:\\Users\\Muhammad Irvan Akbar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Muhammad Irvan Akbar\\Source\\Repos\\BengkelinAja\\obj\\",
+      "outputPath": "C:\\Users\\Muhammad Irvan Akbar\\Documents\\BENGKEL 1_12\\BengkelinAja\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Muhammad Irvan Akbar\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BengkelinAja")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d787fd224e0fde0a9876de8ab9fe817f4a0894f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cc9b589cbfd8ee6ad48b26b3ae5b9286ff60054")]
 [assembly: System.Reflection.AssemblyProductAttribute("BengkelinAja")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BengkelinAja")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
