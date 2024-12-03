@@ -10,8 +10,8 @@ namespace winform_mvc.App.Core
         private static readonly string DB_HOST = "localhost";
         private static readonly string DB_DATABASE = "BengkelinAja";
         private static readonly string DB_USERNAME = "postgres";
-        private static readonly string DB_PASSWORD = "12345";
-        private static readonly string DB_PORT = "5432";
+        private static readonly string DB_PASSWORD = "Gwbis@99";
+        private static readonly string DB_PORT = "5433";
 
         // Menggabungkan kredensial di dalam satu connection string
         private static readonly string connectionString = $"Host={DB_HOST};Port={DB_PORT};Username={DB_USERNAME};Password={DB_PASSWORD};Database={DB_DATABASE}";

@@ -31,7 +31,7 @@ namespace BengkelinAja.View
         {
             try
             {
-                var dataTable = BengkelContext.GetBengkelWithLayanan();
+                var dataTable = BengkelContext.GetAllBengkel();
                 if (dataTable != null && dataTable.Rows.Count > 0)
                 {
                     dataGridView1.DataSource = dataTable; // Asumsikan nama DataGridView adalah dataGridView1

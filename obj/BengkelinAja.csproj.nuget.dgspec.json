@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Muhammad Irvan Akbar\\Source\\Repos\\BengkelinAja\\BengkelinAja.csproj": {}
+    "E:\\Semester 3\\PBO\\Projek Akhir\\BengkelinAja.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Muhammad Irvan Akbar\\Source\\Repos\\BengkelinAja\\BengkelinAja.csproj": {
+    "E:\\Semester 3\\PBO\\Projek Akhir\\BengkelinAja.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muhammad Irvan Akbar\\Source\\Repos\\BengkelinAja\\BengkelinAja.csproj",
+        "projectUniqueName": "E:\\Semester 3\\PBO\\Projek Akhir\\BengkelinAja.csproj",
         "projectName": "BengkelinAja",
-        "projectPath": "C:\\Users\\Muhammad Irvan Akbar\\Source\\Repos\\BengkelinAja\\BengkelinAja.csproj",
-        "packagesPath": "C:\\Users\\Muhammad Irvan Akbar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muhammad Irvan Akbar\\Source\\Repos\\BengkelinAja\\obj\\",
+        "projectPath": "E:\\Semester 3\\PBO\\Projek Akhir\\BengkelinAja.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "E:\\Semester 3\\PBO\\Projek Akhir\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Muhammad Irvan Akbar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
