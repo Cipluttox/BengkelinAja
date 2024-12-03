@@ -7,6 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using winform_mvc.App.Core;
 
 namespace BengkelinAja.Context
@@ -41,7 +42,11 @@ namespace BengkelinAja.Context
         {
             try
             {
-                string query = $"INSERT INTO {table} (nama_bengkel, nama_pemilik, alamat_pemilik, username, password, email, no_telp, alamat_bengkel, jam_buka, jam_tutup) VALUES(@namaBengkel, @namaPemilik, @alamatPemilik, @username, @password, @email, @noTelp, @alamatBengkel, @jamBuka, @jamTutup)";
+                string query = $@"
+                    INSERT INTO {table} 
+                    (nama_bengkel, nama_pemilik, alamat_pemilik, username, password, email, no_telp, alamat_bengkel, jam_buka, jam_tutup, layanan) 
+                    VALUES(@namaBengkel, @namaPemilik, @alamatPemilik, @username, @password, @email, @noTelp, @alamatBengkel, @jamBuka, @jamTutup, @layanan)";
+                //string query = $"INSERT INTO {table} (nama_bengkel, nama_pemilik, alamat_pemilik, username, password, email, no_telp, alamat_bengkel, jam_buka, jam_tutup) VALUES(@namaBengkel, @namaPemilik, @alamatPemilik, @username, @password, @email, @noTelp, @alamatBengkel, @jamBuka, @jamTutup)";
                 NpgsqlParameter[] parameters =
                 {
                 new NpgsqlParameter("@namaBengkel", NpgsqlDbType.Varchar) { Value = pengelolaBaru.nama_bengkel },
@@ -53,10 +58,15 @@ namespace BengkelinAja.Context
                 new NpgsqlParameter("@noTelp", NpgsqlDbType.Varchar) { Value = pengelolaBaru.no_telp},
                 new NpgsqlParameter("@alamatBengkel", NpgsqlDbType.Varchar) { Value = pengelolaBaru.alamat_bengkel},
                 new NpgsqlParameter("@jamBuka", NpgsqlDbType.Time) { Value = pengelolaBaru.jam_buka},
-                new NpgsqlParameter("@jamTutup", NpgsqlDbType.Time) { Value = pengelolaBaru.jam_tutup}
+                new NpgsqlParameter("@jamTutup", NpgsqlDbType.Time) { Value = pengelolaBaru.jam_tutup},
+                new NpgsqlParameter("@layanan", NpgsqlDbType.Text) { Value = pengelolaBaru.Layanans}
             };
                 commandExecutor(query, parameters);
-                
+                //using (var command = new NpgsqlCommand(query))
+                //{
+                //    command.Parameters.AddRange(parameters);
+                //    command.ExecuteNonQuery(); // Menjalankan query untuk insert data
+                //}
             }
             catch
             {
@@ -64,6 +74,10 @@ namespace BengkelinAja.Context
                 
             }
         }
+
+        
+
+
 
         public static class BengkelController
         {
@@ -116,6 +130,20 @@ namespace BengkelinAja.Context
                     Console.WriteLine($"Error saat mengupdate data bengkel: {ex.Message}");
                     return false;
                 }
+            }
+        }
+
+        public static DataTable GetAllBengkel()
+        {
+            try
+            {
+                string query = $"SELECT id_bengkel, nama_bengkel, nama_pemilik, alamat_bengkel, no_telp, email, jam_buka, jam_tutup FROM {table}";
+                return queryExecutor(query); // Menggunakan queryExecutor dari DatabaseWrapper
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Gagal mengambil data: " + e.Message);
+                return null;
             }
         }
     }

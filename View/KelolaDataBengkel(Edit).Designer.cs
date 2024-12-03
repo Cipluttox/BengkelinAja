@@ -34,10 +34,10 @@
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
-            C1_servisRutin = new CheckBox();
-            C2_gantiOli = new CheckBox();
-            C3_servisGaransi = new CheckBox();
-            C4_servisDarurat = new CheckBox();
+            L1_Pengelola = new CheckBox();
+            L2_Pengelola = new CheckBox();
+            L3_Pengelola = new CheckBox();
+            L5_Pengelola = new CheckBox();
             label3 = new Label();
             textBox2 = new TextBox();
             label4 = new Label();
@@ -109,45 +109,47 @@
             label2.TabIndex = 5;
             label2.Text = "Layanan";
             // 
-            // C1_servisRutin
+            // L1_Pengelola
             // 
-            C1_servisRutin.AutoSize = true;
-            C1_servisRutin.Location = new Point(298, 198);
-            C1_servisRutin.Name = "C1_servisRutin";
-            C1_servisRutin.Size = new Size(107, 24);
-            C1_servisRutin.TabIndex = 6;
-            C1_servisRutin.Text = "Servis Rutin";
-            C1_servisRutin.UseVisualStyleBackColor = true;
+            L1_Pengelola.AutoSize = true;
+            L1_Pengelola.Location = new Point(298, 198);
+            L1_Pengelola.Name = "L1_Pengelola";
+            L1_Pengelola.Size = new Size(107, 24);
+            L1_Pengelola.TabIndex = 6;
+            L1_Pengelola.Text = "Servis Rutin";
+            L1_Pengelola.UseVisualStyleBackColor = true;
             // 
-            // C2_gantiOli
+            // L2_Pengelola
             // 
-            C2_gantiOli.AutoSize = true;
-            C2_gantiOli.Location = new Point(298, 241);
-            C2_gantiOli.Name = "C2_gantiOli";
-            C2_gantiOli.Size = new Size(89, 24);
-            C2_gantiOli.TabIndex = 7;
-            C2_gantiOli.Text = "Ganti Oli";
-            C2_gantiOli.UseVisualStyleBackColor = true;
+            L2_Pengelola.AutoSize = true;
+            L2_Pengelola.Location = new Point(298, 241);
+            L2_Pengelola.Name = "L2_Pengelola";
+            L2_Pengelola.Size = new Size(89, 24);
+            L2_Pengelola.TabIndex = 7;
+            L2_Pengelola.Text = "Ganti Oli";
+            L2_Pengelola.UseVisualStyleBackColor = true;
             // 
-            // C3_servisGaransi
+            // L3_Pengelola
             // 
-            C3_servisGaransi.AutoSize = true;
-            C3_servisGaransi.Location = new Point(444, 198);
-            C3_servisGaransi.Name = "C3_servisGaransi";
-            C3_servisGaransi.Size = new Size(122, 24);
-            C3_servisGaransi.TabIndex = 8;
-            C3_servisGaransi.Text = "Servis Garansi";
-            C3_servisGaransi.UseVisualStyleBackColor = true;
+            L3_Pengelola.AutoSize = true;
+            L3_Pengelola.Location = new Point(444, 198);
+            L3_Pengelola.Name = "L3_Pengelola";
+            L3_Pengelola.Size = new Size(122, 24);
+            L3_Pengelola.TabIndex = 8;
+            L3_Pengelola.Text = "Servis Garansi";
+            L3_Pengelola.UseVisualStyleBackColor = true;
+            L3_Pengelola.CheckedChanged += C3_servisGaransi_CheckedChanged;
             // 
-            // C4_servisDarurat
+            // L5_Pengelola
             // 
-            C4_servisDarurat.AutoSize = true;
-            C4_servisDarurat.Location = new Point(444, 241);
-            C4_servisDarurat.Name = "C4_servisDarurat";
-            C4_servisDarurat.Size = new Size(123, 24);
-            C4_servisDarurat.TabIndex = 9;
-            C4_servisDarurat.Text = "Servis Darurat";
-            C4_servisDarurat.UseVisualStyleBackColor = true;
+            L5_Pengelola.AutoSize = true;
+            L5_Pengelola.Location = new Point(444, 241);
+            L5_Pengelola.Name = "L5_Pengelola";
+            L5_Pengelola.Size = new Size(123, 24);
+            L5_Pengelola.TabIndex = 9;
+            L5_Pengelola.Text = "Servis Darurat";
+            L5_Pengelola.UseVisualStyleBackColor = true;
+            L5_Pengelola.CheckedChanged += L5_Pengelola_CheckedChanged;
             // 
             // label3
             // 
@@ -211,10 +213,10 @@
             Controls.Add(label4);
             Controls.Add(textBox2);
             Controls.Add(label3);
-            Controls.Add(C4_servisDarurat);
-            Controls.Add(C3_servisGaransi);
-            Controls.Add(C2_gantiOli);
-            Controls.Add(C1_servisRutin);
+            Controls.Add(L5_Pengelola);
+            Controls.Add(L3_Pengelola);
+            Controls.Add(L2_Pengelola);
+            Controls.Add(L1_Pengelola);
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
@@ -236,10 +238,10 @@
         private Label label1;
         private TextBox textBox1;
         private Label label2;
-        private CheckBox C1_servisRutin;
-        private CheckBox C2_gantiOli;
-        private CheckBox C3_servisGaransi;
-        private CheckBox C4_servisDarurat;
+        private CheckBox L1_Pengelola;
+        private CheckBox L2_Pengelola;
+        private CheckBox L3_Pengelola;
+        private CheckBox L5_Pengelola;
         private Label label3;
         private TextBox textBox2;
         private Label label4;

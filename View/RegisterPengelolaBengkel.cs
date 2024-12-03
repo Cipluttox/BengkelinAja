@@ -1,5 +1,6 @@
 ﻿using BengkelinAja.Context;
 using BengkelinAja.Model;
+using static BengkelinAja.Model.M_Bengkel;
 
 namespace BengkelinAja.View
 {
@@ -36,23 +37,40 @@ namespace BengkelinAja.View
                     no_telp = NT_Pengelola.Text,
                     alamat_bengkel = AB_Pengelola.Text,
                     jam_buka = TimeOnly.Parse(JB_Pengelola.Text),
-                    jam_tutup = TimeOnly.Parse(JT_Pengelola.Text)
+                    jam_tutup = TimeOnly.Parse(JT_Pengelola.Text),
+                    Layanans = new List<layanan>()
                 };
 
+                if (L1_Pengelola.Checked)
+                    pengelolaBaru.Layanans.Add(new layanan { id_layanan = 1 }); // ID layanan sesuai dengan data di database
+                if (L2_Pengelola.Checked)
+                    pengelolaBaru.Layanans.Add(new layanan { id_layanan = 2 });
+                if (L3_Pengelola.Checked)
+                    pengelolaBaru.Layanans.Add(new layanan { id_layanan = 3 });
+                if (L5_Pengelola.Checked)
+                    pengelolaBaru.Layanans.Add(new layanan { id_layanan = 5 });
+
                 BengkelContext.RegisterPengelola(pengelolaBaru);
-                
 
-                this.DialogResult = DialogResult.OK;
-                this.Hide();
 
-                HomePageBengkel daftarPengelola = new HomePageBengkel();
-                daftarPengelola.Show();
+                //this.DialogResult = DialogResult.OK;
+                //this.Hide();
+                MessageBox.Show("Berhasil register");
+                //HomePageBengkel daftarPengelola = new HomePageBengkel();
+                //daftarPengelola.Show();
+
+                var kelolaDataForm = new KelolaDataBengkel__View_();
+                kelolaDataForm.Show();
+                this.Close(); // Menutup form register
             }
-            catch (FormatException)
+            catch (FormatException ex)
             {
-                MessageBox.Show("Format jam buka/tutup tidak valid. Gunakan format HH:mm.");
+                MessageBox.Show("Format jam buka/tutup tidak valid. Gunakan format HH:mm. " + ex.Message, "Format Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            MessageBox.Show("Berhasil register");
+            catch (Exception ex)
+            {
+                MessageBox.Show("Terjadi kesalahan saat mendaftarkan pengelola baru: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 
@@ -87,6 +105,31 @@ namespace BengkelinAja.View
         }
 
         private void NB_Pengelola_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void L2_Pengelola_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void L5_Pengelola_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void L1_Pengelola_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void L3_Pengelola_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void JT_Pengelola_TextChanged(object sender, EventArgs e)
         {
 
         }

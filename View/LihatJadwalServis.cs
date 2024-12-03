@@ -16,5 +16,12 @@ namespace BengkelinAja.View
         {
             InitializeComponent();
         }
+
+        private void btn_kembali_Click(object sender, EventArgs e)
+        {
+            HomePageBengkel homePage = new HomePageBengkel();
+            homePage.Show();
+            this.Hide();
+        }
     }
 }

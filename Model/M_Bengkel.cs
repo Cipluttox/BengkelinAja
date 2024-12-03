@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static BengkelinAja.Model.M_Bengkel;
 
 namespace BengkelinAja.Model
 {
@@ -33,6 +34,7 @@ namespace BengkelinAja.Model
             public TimeOnly jam_buka { get; set; }
             [Required]
             public TimeOnly jam_tutup {  get; set; }
+            public List<layanan> Layanans { get; set; }
         }
         public class metodePembayaran
         {
@@ -60,12 +62,11 @@ namespace BengkelinAja.Model
             [Key]
             public int id_layanan { get; set; }
             [Required]
-            public List<string> nama_layanan { get; set; }
+            public string nama_layanan { get; set; } // Ganti dari List<string> ke string
         }
 
-    
-        
-        
-        
+
+
+
     } 
 }

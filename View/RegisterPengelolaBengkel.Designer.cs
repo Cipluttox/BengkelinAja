@@ -198,6 +198,7 @@
             JT_Pengelola.Name = "JT_Pengelola";
             JT_Pengelola.Size = new Size(291, 27);
             JT_Pengelola.TabIndex = 15;
+            JT_Pengelola.TextChanged += JT_Pengelola_TextChanged;
             // 
             // US_Pengelola
             // 
@@ -274,6 +275,7 @@
             L1_Pengelola.TabIndex = 25;
             L1_Pengelola.Text = "Servis Rutin";
             L1_Pengelola.UseVisualStyleBackColor = false;
+            L1_Pengelola.CheckedChanged += L1_Pengelola_CheckedChanged;
             // 
             // L2_Pengelola
             // 
@@ -285,6 +287,7 @@
             L2_Pengelola.TabIndex = 26;
             L2_Pengelola.Text = "Ganti Oli";
             L2_Pengelola.UseVisualStyleBackColor = false;
+            L2_Pengelola.CheckedChanged += L2_Pengelola_CheckedChanged;
             // 
             // L3_Pengelola
             // 
@@ -296,6 +299,7 @@
             L3_Pengelola.TabIndex = 27;
             L3_Pengelola.Text = "Servis Garansi";
             L3_Pengelola.UseVisualStyleBackColor = false;
+            L3_Pengelola.CheckedChanged += L3_Pengelola_CheckedChanged;
             // 
             // L5_Pengelola
             // 
@@ -307,6 +311,7 @@
             L5_Pengelola.TabIndex = 28;
             L5_Pengelola.Text = "Servis Darurat";
             L5_Pengelola.UseVisualStyleBackColor = false;
+            L5_Pengelola.CheckedChanged += L5_Pengelola_CheckedChanged;
             // 
             // RegisterPengelolaBengkel
             // 
