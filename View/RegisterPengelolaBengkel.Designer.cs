@@ -267,6 +267,7 @@
             // 
             // L1_ServisRutin
             // 
+<<<<<<< HEAD
             L1_ServisRutin.AutoSize = true;
             L1_ServisRutin.BackColor = Color.White;
             L1_ServisRutin.Location = new Point(352, 128);
@@ -276,9 +277,21 @@
             L1_ServisRutin.Text = "Servis Rutin";
             L1_ServisRutin.UseVisualStyleBackColor = false;
             L1_ServisRutin.CheckedChanged += L1_Pengelola_CheckedChanged;
+=======
+            L1_Pengelola.AutoSize = true;
+            L1_Pengelola.BackColor = Color.White;
+            L1_Pengelola.Location = new Point(349, 127);
+            L1_Pengelola.Name = "L1_Pengelola";
+            L1_Pengelola.Size = new Size(107, 24);
+            L1_Pengelola.TabIndex = 25;
+            L1_Pengelola.Text = "Servis Rutin";
+            L1_Pengelola.UseVisualStyleBackColor = false;
+            L1_Pengelola.CheckedChanged += L1_Pengelola_CheckedChanged;
+>>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
             // 
             // L2_GantiOli
             // 
+<<<<<<< HEAD
             L2_GantiOli.AutoSize = true;
             L2_GantiOli.BackColor = Color.White;
             L2_GantiOli.Location = new Point(352, 154);
@@ -288,9 +301,21 @@
             L2_GantiOli.Text = "Ganti Oli";
             L2_GantiOli.UseVisualStyleBackColor = false;
             L2_GantiOli.CheckedChanged += L2_Pengelola_CheckedChanged;
+=======
+            L2_Pengelola.AutoSize = true;
+            L2_Pengelola.BackColor = Color.White;
+            L2_Pengelola.Location = new Point(349, 157);
+            L2_Pengelola.Name = "L2_Pengelola";
+            L2_Pengelola.Size = new Size(89, 24);
+            L2_Pengelola.TabIndex = 26;
+            L2_Pengelola.Text = "Ganti Oli";
+            L2_Pengelola.UseVisualStyleBackColor = false;
+            L2_Pengelola.CheckedChanged += L2_Pengelola_CheckedChanged;
+>>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
             // 
             // L3_ServisGaransi
             // 
+<<<<<<< HEAD
             L3_ServisGaransi.AutoSize = true;
             L3_ServisGaransi.BackColor = Color.White;
             L3_ServisGaransi.Location = new Point(482, 128);
@@ -300,9 +325,21 @@
             L3_ServisGaransi.Text = "Servis Garansi";
             L3_ServisGaransi.UseVisualStyleBackColor = false;
             L3_ServisGaransi.CheckedChanged += L3_Pengelola_CheckedChanged;
+=======
+            L3_Pengelola.AutoSize = true;
+            L3_Pengelola.BackColor = Color.White;
+            L3_Pengelola.Location = new Point(501, 128);
+            L3_Pengelola.Name = "L3_Pengelola";
+            L3_Pengelola.Size = new Size(122, 24);
+            L3_Pengelola.TabIndex = 27;
+            L3_Pengelola.Text = "Servis Garansi";
+            L3_Pengelola.UseVisualStyleBackColor = false;
+            L3_Pengelola.CheckedChanged += L3_Pengelola_CheckedChanged;
+>>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
             // 
             // L5_ServisDarurat
             // 
+<<<<<<< HEAD
             L5_ServisDarurat.AutoSize = true;
             L5_ServisDarurat.BackColor = Color.White;
             L5_ServisDarurat.Location = new Point(482, 154);
@@ -312,6 +349,17 @@
             L5_ServisDarurat.Text = "Servis Darurat";
             L5_ServisDarurat.UseVisualStyleBackColor = false;
             L5_ServisDarurat.CheckedChanged += L5_Pengelola_CheckedChanged;
+=======
+            L5_Pengelola.AutoSize = true;
+            L5_Pengelola.BackColor = Color.White;
+            L5_Pengelola.Location = new Point(501, 157);
+            L5_Pengelola.Name = "L5_Pengelola";
+            L5_Pengelola.Size = new Size(123, 24);
+            L5_Pengelola.TabIndex = 28;
+            L5_Pengelola.Text = "Servis Darurat";
+            L5_Pengelola.UseVisualStyleBackColor = false;
+            L5_Pengelola.CheckedChanged += L5_Pengelola_CheckedChanged;
+>>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
             // 
             // RegisterPengelolaBengkel
             // 

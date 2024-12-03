@@ -1,7 +1,10 @@
 ﻿using BengkelinAja.Context;
 using BengkelinAja.Model;
 using static BengkelinAja.Model.M_Bengkel;
+<<<<<<< HEAD
 using static BengkelinAja.View.Login;
+=======
+>>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
 
 namespace BengkelinAja.View
 {
@@ -39,9 +42,11 @@ namespace BengkelinAja.View
                     no_telp = NT_Pengelola.Text,
                     alamat_bengkel = AB_Pengelola.Text,
                     jam_buka = TimeOnly.Parse(JB_Pengelola.Text),
-                    jam_tutup = TimeOnly.Parse(JT_Pengelola.Text)
+                    jam_tutup = TimeOnly.Parse(JT_Pengelola.Text),
+                    Layanans = new List<layanan>()
                 };
 
+<<<<<<< HEAD
                 string username = US_Pengelola.Text;
                 string password = PW_Pengelola.Text;
 
@@ -60,6 +65,29 @@ namespace BengkelinAja.View
                 this.Hide();
                 Login HalLogin = new Login();
                 HalLogin.Show();
+=======
+                if (L1_Pengelola.Checked)
+                    pengelolaBaru.Layanans.Add(new layanan { id_layanan = 1 }); // ID layanan sesuai dengan data di database
+                if (L2_Pengelola.Checked)
+                    pengelolaBaru.Layanans.Add(new layanan { id_layanan = 2 });
+                if (L3_Pengelola.Checked)
+                    pengelolaBaru.Layanans.Add(new layanan { id_layanan = 3 });
+                if (L5_Pengelola.Checked)
+                    pengelolaBaru.Layanans.Add(new layanan { id_layanan = 5 });
+
+                BengkelContext.RegisterPengelola(pengelolaBaru);
+
+
+                //this.DialogResult = DialogResult.OK;
+                //this.Hide();
+                MessageBox.Show("Berhasil register");
+                //HomePageBengkel daftarPengelola = new HomePageBengkel();
+                //daftarPengelola.Show();
+
+                var kelolaDataForm = new KelolaDataBengkel__View_();
+                kelolaDataForm.Show();
+                this.Close(); // Menutup form register
+>>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
             }
             catch (FormatException ex)
             {
@@ -131,10 +159,13 @@ namespace BengkelinAja.View
         {
 
         }
+<<<<<<< HEAD
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
             
         }
+=======
+>>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
     }
 }

@@ -42,9 +42,15 @@ namespace BengkelinAja.Context
             try
             {
                 string query = $@"
+<<<<<<< HEAD
                     INSERT INTO bengkel 
                     (nama_bengkel, nama_pemilik, alamat_pemilik, username, password, email, no_telp, alamat_bengkel, jam_buka, jam_tutup) 
                     VALUES(@namaBengkel, @namaPemilik, @alamatPemilik, @username, @password, @email, @noTelp, @alamatBengkel, @jamBuka, @jamTutup)";
+=======
+                    INSERT INTO {table} 
+                    (nama_bengkel, nama_pemilik, alamat_pemilik, username, password, email, no_telp, alamat_bengkel, jam_buka, jam_tutup, layanan) 
+                    VALUES(@namaBengkel, @namaPemilik, @alamatPemilik, @username, @password, @email, @noTelp, @alamatBengkel, @jamBuka, @jamTutup, @layanan)";
+>>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
                 //string query = $"INSERT INTO {table} (nama_bengkel, nama_pemilik, alamat_pemilik, username, password, email, no_telp, alamat_bengkel, jam_buka, jam_tutup) VALUES(@namaBengkel, @namaPemilik, @alamatPemilik, @username, @password, @email, @noTelp, @alamatBengkel, @jamBuka, @jamTutup)";
                 NpgsqlParameter[] parameters =
                 {
@@ -57,9 +63,18 @@ namespace BengkelinAja.Context
                 new NpgsqlParameter("@noTelp", NpgsqlDbType.Varchar) { Value = pengelolaBaru.no_telp},
                 new NpgsqlParameter("@alamatBengkel", NpgsqlDbType.Varchar) { Value = pengelolaBaru.alamat_bengkel},
                 new NpgsqlParameter("@jamBuka", NpgsqlDbType.Time) { Value = pengelolaBaru.jam_buka},
-                new NpgsqlParameter("@jamTutup", NpgsqlDbType.Time) { Value = pengelolaBaru.jam_tutup}
+                new NpgsqlParameter("@jamTutup", NpgsqlDbType.Time) { Value = pengelolaBaru.jam_tutup},
+                new NpgsqlParameter("@layanan", NpgsqlDbType.Text) { Value = pengelolaBaru.Layanans}
             };
                 commandExecutor(query, parameters);
+<<<<<<< HEAD
+=======
+                //using (var command = new NpgsqlCommand(query))
+                //{
+                //    command.Parameters.AddRange(parameters);
+                //    command.ExecuteNonQuery(); // Menjalankan query untuk insert data
+                //}
+>>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
             }
             catch
             {
@@ -67,6 +82,7 @@ namespace BengkelinAja.Context
             }
         }
 
+<<<<<<< HEAD
         public static int LoginBengkelGetId(string username, string password)
         {
             string loginQuery = "SELECT id_bengkel FROM bengkel WHERE username = @username AND password = @password";
@@ -154,6 +170,9 @@ namespace BengkelinAja.Context
                 throw new Exception("Failed to load data for the current bengkel.");
             }
         }
+=======
+        
+>>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
 
 
 
@@ -215,7 +234,11 @@ namespace BengkelinAja.Context
         {
             try
             {
+<<<<<<< HEAD
                 string query = $"SELECT id_bengkel, nama_bengkel, nama_pemilik, alamat_bengkel, no_telp, email, jam_buka, jam_tutup FROM bengkel";
+=======
+                string query = $"SELECT id_bengkel, nama_bengkel, nama_pemilik, alamat_bengkel, no_telp, email, jam_buka, jam_tutup FROM {table}";
+>>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
                 return queryExecutor(query); // Menggunakan queryExecutor dari DatabaseWrapper
             }
             catch (Exception e)
