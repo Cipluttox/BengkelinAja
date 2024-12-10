@@ -1,4 +1,4 @@
-﻿namespace BengkelinAja.View
+namespace BengkelinAja___Final_Project.View
 {
     partial class HomePageBengkel
     {
@@ -29,23 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePageBengkel));
-            pictureBox1 = new PictureBox();
             bt_KelolaData = new Button();
+            pictureBox1 = new PictureBox();
             bt_LihatJadwalServis = new Button();
             bt_LayananAntarJemput = new Button();
             bt_KonfirmBayar = new Button();
             bt_Logout = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, -18);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(800, 474);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // bt_KelolaData
             // 
@@ -59,6 +50,15 @@
             bt_KelolaData.Text = "Kelola Data Bengkel";
             bt_KelolaData.UseVisualStyleBackColor = false;
             bt_KelolaData.Click += bt_KelolaData_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, -18);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(800, 474);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // bt_LihatJadwalServis
             // 
@@ -116,8 +116,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(800, 453);
+            ClientSize = new Size(800, 450);
             Controls.Add(bt_Logout);
             Controls.Add(bt_KonfirmBayar);
             Controls.Add(bt_LayananAntarJemput);
@@ -132,8 +131,8 @@
 
         #endregion
 
-        private PictureBox pictureBox1;
         private Button bt_KelolaData;
+        private PictureBox pictureBox1;
         private Button bt_LihatJadwalServis;
         private Button bt_LayananAntarJemput;
         private Button bt_KonfirmBayar;
