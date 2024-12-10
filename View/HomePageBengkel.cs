@@ -1,4 +1,6 @@
-﻿using System;
+using BengkelinAja___Final_Project.View;
+using BengkelinAja___Final_Project;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BengkelinAja.View
+namespace BengkelinAja___Final_Project.View
 {
     public partial class HomePageBengkel : Form
     {
@@ -20,7 +22,7 @@ namespace BengkelinAja.View
         private void bt_KelolaData_Click(object sender, EventArgs e)
         {
             this.Close();
-            KelolaDataBengkel__View_ kelolaDataBengkel = new KelolaDataBengkel__View_();
+            KelolaDataBengkel_View_ kelolaDataBengkel = new KelolaDataBengkel_View_();
             kelolaDataBengkel.Show();
         }
 
@@ -41,16 +43,16 @@ namespace BengkelinAja.View
         private void bt_KonfirmBayar_Click(object sender, EventArgs e)
         {
             this.Close();
-            Konfirmasi_pembayaran konfirmBayara = new Konfirmasi_pembayaran();
-            konfirmBayara.Show();
+            KonfirmasiPembayaran konfirmBayar = new KonfirmasiPembayaran();
+            konfirmBayar.Show();
         }
 
         private void bt_Logout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Anda berhasil keluar dari aplikasi");
-            this.Close();
             Form1 landingPage = new Form1();
+            this.Close();
             landingPage.Show();
+            MessageBox.Show("Anda berhasil logout");
         }
     }
 }
