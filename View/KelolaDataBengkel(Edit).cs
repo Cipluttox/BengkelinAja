@@ -225,5 +225,3 @@ namespace BengkelinAja___Final_Project.View
         }
     }
 }
-
-
