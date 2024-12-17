@@ -1,12 +1,10 @@
-﻿using BengkelinAja.Context;
-using BengkelinAja.Model;
-using static BengkelinAja.Model.M_Bengkel;
-<<<<<<< HEAD
-using static BengkelinAja.View.Login;
-=======
->>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
+using BengkelinAja___Final_Project.Context;
+using BengkelinAja___Final_Project.Model;
+using BengkelinAja___Final_Project.View;
+using static BengkelinAja___Final_Project.Model.M_Bengkel;
+using static BengkelinAja___Final_Project.View.Login;
 
-namespace BengkelinAja.View
+namespace BengkelinAja___Final_Project.View
 {
     public partial class RegisterPengelolaBengkel : Form
     {
@@ -31,7 +29,7 @@ namespace BengkelinAja.View
 
             try
             {
-                M_Bengkel.DataBengkel pengelolaBaru = new M_Bengkel.DataBengkel
+                M_Bengkel.DataBengkel pengelolaBaru = new ConcreteDataBengkel
                 {
                     nama_bengkel = NB_Pengelola.Text,
                     nama_pemilik = NP_Pengelola.Text,
@@ -42,16 +40,16 @@ namespace BengkelinAja.View
                     no_telp = NT_Pengelola.Text,
                     alamat_bengkel = AB_Pengelola.Text,
                     jam_buka = TimeOnly.Parse(JB_Pengelola.Text),
-                    jam_tutup = TimeOnly.Parse(JT_Pengelola.Text),
-                    Layanans = new List<layanan>()
+                    jam_tutup = TimeOnly.Parse(JT_Pengelola.Text)
                 };
 
-<<<<<<< HEAD
                 string username = US_Pengelola.Text;
                 string password = PW_Pengelola.Text;
 
-                BengkelContext.RegisterPengelola(pengelolaBaru);
-                int id_bengkel = BengkelContext.LoginBengkelGetId(username, password);
+                var bengkelContext = new BengkelContext();
+
+                bengkelContext.RegisterPengelola(pengelolaBaru);
+                int id_bengkel = bengkelContext.LoginBengkelGetId(username, password);
 
                 List<int> listLayanan = new List<int>();
                 if (L1_ServisRutin.Checked) { listLayanan.Add(1); }
@@ -59,35 +57,21 @@ namespace BengkelinAja.View
                 if (L3_ServisGaransi.Checked) { listLayanan.Add(3); }
                 if (L5_ServisDarurat.Checked) { listLayanan.Add(4); }
 
-                for (int i = 0; i < listLayanan.Count; i++) { BengkelContext.TambahLayananBengkel(id_bengkel, listLayanan[i]); }
+                for (int i = 0; i < listLayanan.Count; i++) { bengkelContext.TambahLayananBengkel(id_bengkel, listLayanan[i]); }
+
+                List<int> listKendaraan = new List<int>();
+                if (cb_mobil.Checked) { listKendaraan.Add(1); }
+                if (cb_SepedaMotor.Checked) { listKendaraan.Add(2); }
+                if (cb_KendaraanBesar.Checked) { listKendaraan.Add(3); }
+
+                for (int i = 0; i < listKendaraan.Count; i++) { bengkelContext.TambahKendaraan(id_bengkel, listKendaraan[i]); }
 
                 MessageBox.Show("Berhasil register");
-                this.Hide();
-                Login HalLogin = new Login();
-                HalLogin.Show();
-=======
-                if (L1_Pengelola.Checked)
-                    pengelolaBaru.Layanans.Add(new layanan { id_layanan = 1 }); // ID layanan sesuai dengan data di database
-                if (L2_Pengelola.Checked)
-                    pengelolaBaru.Layanans.Add(new layanan { id_layanan = 2 });
-                if (L3_Pengelola.Checked)
-                    pengelolaBaru.Layanans.Add(new layanan { id_layanan = 3 });
-                if (L5_Pengelola.Checked)
-                    pengelolaBaru.Layanans.Add(new layanan { id_layanan = 5 });
+                this.DialogResult = DialogResult.OK;
+                this.Close();
 
-                BengkelContext.RegisterPengelola(pengelolaBaru);
-
-
-                //this.DialogResult = DialogResult.OK;
-                //this.Hide();
-                MessageBox.Show("Berhasil register");
-                //HomePageBengkel daftarPengelola = new HomePageBengkel();
-                //daftarPengelola.Show();
-
-                var kelolaDataForm = new KelolaDataBengkel__View_();
-                kelolaDataForm.Show();
-                this.Close(); // Menutup form register
->>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
+                Login login = new Login();
+                login.Show();
             }
             catch (FormatException ex)
             {
@@ -159,13 +143,31 @@ namespace BengkelinAja.View
         {
 
         }
-<<<<<<< HEAD
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-            
+
         }
-=======
->>>>>>> df18044dd7e3840d9a7ec8475b567e884b7181c8
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NP_Pengelola_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void JT_Pengelola_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
