@@ -1,4 +1,4 @@
-﻿namespace BengkelinAja.View
+namespace BengkelinAja___Final_Project.View
 {
     partial class Register_Pelanggan
     {
@@ -29,148 +29,154 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register_Pelanggan));
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            tbpNamaLengkap = new TextBox();
-            pictureBox1 = new PictureBox();
-            tbpEmail = new TextBox();
-            tbpAlamat = new TextBox();
-            tbpNoTelp = new TextBox();
-            tbpUsername = new TextBox();
-            tbpPassword = new TextBox();
             button1 = new Button();
+            tbpPassword = new TextBox();
+            tbpUsername = new TextBox();
+            tbpNoTelp = new TextBox();
+            tbpAlamat = new TextBox();
+            tbpEmail = new TextBox();
+            tbpNamaLengkap = new TextBox();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // button1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(228, 109);
-            label1.Name = "label1";
-            label1.Size = new Size(133, 20);
-            label1.TabIndex = 1;
-            label1.Text = "Nama Pelanggan : ";
-            label1.Click += label1_Click;
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonFace;
+            button1.Location = new Point(648, 366);
+            button1.Name = "button1";
+            button1.Size = new Size(79, 24);
+            button1.TabIndex = 33;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // label2
+            // tbpPassword
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(228, 145);
-            label2.Name = "label2";
-            label2.Size = new Size(53, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Email :";
+            tbpPassword.BackColor = SystemColors.Menu;
+            tbpPassword.Location = new Point(457, 320);
+            tbpPassword.Name = "tbpPassword";
+            tbpPassword.Size = new Size(274, 27);
+            tbpPassword.TabIndex = 32;
             // 
-            // label3
+            // tbpUsername
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(228, 185);
-            label3.Name = "label3";
-            label3.Size = new Size(64, 20);
-            label3.TabIndex = 3;
-            label3.Text = "Alamat :";
+            tbpUsername.BackColor = SystemColors.Menu;
+            tbpUsername.Location = new Point(457, 273);
+            tbpUsername.Name = "tbpUsername";
+            tbpUsername.Size = new Size(274, 27);
+            tbpUsername.TabIndex = 31;
             // 
-            // label4
+            // tbpNoTelp
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(228, 224);
-            label4.Name = "label4";
-            label4.Size = new Size(92, 20);
-            label4.TabIndex = 4;
-            label4.Text = "No.Telepon :";
+            tbpNoTelp.BackColor = SystemColors.Menu;
+            tbpNoTelp.Location = new Point(457, 225);
+            tbpNoTelp.Name = "tbpNoTelp";
+            tbpNoTelp.Size = new Size(274, 27);
+            tbpNoTelp.TabIndex = 30;
             // 
-            // label5
+            // tbpAlamat
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(228, 265);
-            label5.Name = "label5";
-            label5.Size = new Size(80, 20);
-            label5.TabIndex = 5;
-            label5.Text = "username :";
+            tbpAlamat.BackColor = SystemColors.Menu;
+            tbpAlamat.Location = new Point(457, 179);
+            tbpAlamat.Name = "tbpAlamat";
+            tbpAlamat.Size = new Size(274, 27);
+            tbpAlamat.TabIndex = 29;
+            // 
+            // tbpEmail
+            // 
+            tbpEmail.BackColor = SystemColors.Menu;
+            tbpEmail.Location = new Point(457, 131);
+            tbpEmail.Name = "tbpEmail";
+            tbpEmail.Size = new Size(274, 27);
+            tbpEmail.TabIndex = 28;
+            // 
+            // tbpNamaLengkap
+            // 
+            tbpNamaLengkap.BackColor = SystemColors.Menu;
+            tbpNamaLengkap.Location = new Point(457, 84);
+            tbpNamaLengkap.Name = "tbpNamaLengkap";
+            tbpNamaLengkap.Size = new Size(274, 27);
+            tbpNamaLengkap.TabIndex = 27;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(228, 304);
+            label6.BackColor = Color.Transparent;
+            label6.Location = new Point(228, 301);
             label6.Name = "label6";
-            label6.Size = new Size(77, 20);
-            label6.TabIndex = 6;
-            label6.Text = "Password :";
+            label6.Size = new Size(0, 20);
+            label6.TabIndex = 26;
             // 
-            // tbpNamaLengkap
+            // label5
             // 
-            tbpNamaLengkap.Location = new Point(370, 106);
-            tbpNamaLengkap.Name = "tbpNamaLengkap";
-            tbpNamaLengkap.Size = new Size(208, 27);
-            tbpNamaLengkap.TabIndex = 13;
-            tbpNamaLengkap.TextChanged += tbpNamaLengkap_TextChanged;
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Location = new Point(228, 262);
+            label5.Name = "label5";
+            label5.Size = new Size(0, 20);
+            label5.TabIndex = 25;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Location = new Point(228, 221);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 20);
+            label4.TabIndex = 24;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Location = new Point(228, 182);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 20);
+            label3.TabIndex = 23;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Location = new Point(228, 142);
+            label2.Name = "label2";
+            label2.Size = new Size(0, 20);
+            label2.TabIndex = 22;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Location = new Point(228, 106);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 20);
+            label1.TabIndex = 21;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1, 0);
+            pictureBox1.Location = new Point(1, -3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(799, 456);
-            pictureBox1.TabIndex = 0;
+            pictureBox1.Size = new Size(799, 411);
+            pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
-            // 
-            // tbpEmail
-            // 
-            tbpEmail.Location = new Point(370, 145);
-            tbpEmail.Name = "tbpEmail";
-            tbpEmail.Size = new Size(208, 27);
-            tbpEmail.TabIndex = 14;
-            // 
-            // tbpAlamat
-            // 
-            tbpAlamat.Location = new Point(370, 185);
-            tbpAlamat.Name = "tbpAlamat";
-            tbpAlamat.Size = new Size(208, 27);
-            tbpAlamat.TabIndex = 15;
-            // 
-            // tbpNoTelp
-            // 
-            tbpNoTelp.Location = new Point(370, 224);
-            tbpNoTelp.Name = "tbpNoTelp";
-            tbpNoTelp.Size = new Size(208, 27);
-            tbpNoTelp.TabIndex = 16;
-            // 
-            // tbpUsername
-            // 
-            tbpUsername.Location = new Point(370, 262);
-            tbpUsername.Name = "tbpUsername";
-            tbpUsername.Size = new Size(208, 27);
-            tbpUsername.TabIndex = 17;
-            // 
-            // tbpPassword
-            // 
-            tbpPassword.Location = new Point(370, 301);
-            tbpPassword.Name = "tbpPassword";
-            tbpPassword.Size = new Size(208, 27);
-            tbpPassword.TabIndex = 18;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(255, 128, 0);
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(492, 350);
-            button1.Name = "button1";
-            button1.Size = new Size(86, 33);
-            button1.TabIndex = 19;
-            button1.Text = "Add";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // Register_Pelanggan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 406);
             Controls.Add(button1);
             Controls.Add(tbpPassword);
             Controls.Add(tbpUsername);
@@ -193,19 +199,20 @@
         }
 
         #endregion
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private TextBox tbpNamaLengkap;
-        private PictureBox pictureBox1;
-        private TextBox tbpEmail;
-        private TextBox tbpAlamat;
-        private TextBox tbpNoTelp;
-        private TextBox tbpUsername;
-        private TextBox tbpPassword;
+
         private Button button1;
-    }
+        private TextBox tbpPassword;
+        private TextBox tbpUsername;
+        private TextBox tbpNoTelp;
+        private TextBox tbpAlamat;
+        private TextBox tbpEmail;
+        private TextBox tbpNamaLengkap;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private PictureBox pictureBox1;
+    }
 }
