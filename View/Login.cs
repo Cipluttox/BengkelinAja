@@ -1,4 +1,5 @@
-﻿using BengkelinAja.Context;
+using BengkelinAja___Final_Project.Context;
+using BengkelinAja___Final_Project.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BengkelinAja.View
+namespace BengkelinAja___Final_Project.View
 {
 
     public partial class Login : Form
@@ -18,44 +19,48 @@ namespace BengkelinAja.View
         public static class LoginSession
         {
             public static int BengkelId { get; set; }
+            public static int PelangganId { get; set; }
+            public static string Username { get; set; }
+            public static string Password { get; set; }
         }
 
 
         public Login()
         {
             InitializeComponent();
-        }
-
-        private void tbPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbUsername_TextChanged(object sender, EventArgs e)
-        {
-
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         public void btLogin_Click(object sender, EventArgs e)
         {
+            var pelangganContext = new PelangganContext();
+            var bengkelContext = new BengkelContext();
             string username = tbUsername.Text;
             string password = tbPassword.Text;
 
-            bool isBengkel = BengkelContext.LoginBengkel(username, password);
-            bool isPelanggan = PelangganContext.LoginPelanggan(username, password);
+            bool isBengkel = bengkelContext.LoginBengkel(username, password);
+            bool isPelanggan = pelangganContext.LoginPelanggan(username, password);
             if (isBengkel)
             {
-                this.Hide();
+                LoginSession.Username = username;
+                LoginSession.Password = password;
+                int id_bengkel = bengkelContext.LoginBengkelGetId(username, password);
+                LoginSession.BengkelId = id_bengkel;
                 this.DialogResult = DialogResult.OK;
                 HomePageBengkel hpBengkel = new HomePageBengkel();
+                this.Hide();
                 hpBengkel.Show();
                 //this.DialogResult = DialogResult.OK;
             }
             else if (isPelanggan)
             {
-                this.Hide();
+                LoginSession.Username = username;
+                LoginSession.Password = password;
+                int id_pelanggan = pelangganContext.LoginPelangganGetId(username, password);
+                LoginSession.PelangganId = id_pelanggan;
                 this.DialogResult = DialogResult.OK;
-                HomePage_Pelanggan hpPelanggan = new HomePage_Pelanggan();
+                HomePagePelanggan hpPelanggan = new HomePagePelanggan();
+                this.Hide();
                 hpPelanggan.Show();
             }
             else
@@ -70,3 +75,5 @@ namespace BengkelinAja.View
         }
     }
 }
+
+
