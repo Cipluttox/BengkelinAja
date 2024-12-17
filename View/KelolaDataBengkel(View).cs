@@ -10,20 +10,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static BengkelinAja___Final_Project.Context.BengkelContext;
 using static BengkelinAja___Final_Project.View.Login;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace BengkelinAja___Final_Project.View
 {
-    public partial class KelolaDataBengkel_Edit_ : Form
+    public partial class KelolaDataBengkel_View_ : Form
     {
-        public KelolaDataBengkel_Edit_()
+        public bool IsEditMode { get; set; } = false;
+        public int BengkelId { get; set; }
+
+        public KelolaDataBengkel_View_()
         {
             InitializeComponent();
-            LoadBengkelData();
             this.StartPosition = FormStartPosition.CenterScreen;
+            LoadBengkelData();
+
         }
 
         private void LoadBengkelData()
@@ -40,9 +42,13 @@ namespace BengkelinAja___Final_Project.View
                 {
                     DataRow row = dt.Rows[0];
                     txtNamaBengkel.Text = row["nama_bengkel"].ToString();
+                    txtNamaBengkel.Enabled = false;
                     txtAlamat.Text = row["alamat_bengkel"].ToString();
+                    txtAlamat.Enabled = false;
                     txtJamBuka.Text = row["jam_buka"].ToString();
+                    txtJamBuka.Enabled = false;
                     txtJamTutup.Text = row["jam_tutup"].ToString();
+                    txtJamTutup.Enabled = false;
                 }
                 else
                 {
@@ -78,6 +84,11 @@ namespace BengkelinAja___Final_Project.View
                         {
                             cbServisDarurat.Checked = true;
                         };
+
+                        cbServisRutin.Enabled = false;
+                        cbServisGaransi.Enabled = false;
+                        cbGantiOli.Enabled = false;
+                        cbServisDarurat.Enabled = false;
                     }
                 }
                 else
@@ -100,6 +111,10 @@ namespace BengkelinAja___Final_Project.View
                         if (namaKendaraan == "Mobil") cbMobil.Checked = true;
                         if (namaKendaraan == "Sepeda Motor") cbSepedaMotor.Checked = true;
                         if (namaKendaraan == "Kendaraan Besar") cbKendaraanBesar.Checked = true;
+
+                        cbMobil.Enabled = false;
+                        cbSepedaMotor.Enabled = false;
+                        cbKendaraanBesar.Enabled = false;
                     }
                 }
                 else
@@ -113,69 +128,29 @@ namespace BengkelinAja___Final_Project.View
                 MessageBox.Show("Terjadi kesalahan: " + ex.Message);
             }
         }
-        private void bt_simpan_Click(object sender, EventArgs e)
+
+
+
+        private void bt_edit_Click(object sender, EventArgs e)
         {
-            var bengkelContext = new BengkelContext();
-            try
-            {
-                if (string.IsNullOrWhiteSpace(txtNamaBengkel.Text) || string.IsNullOrWhiteSpace(txtAlamat.Text))
-                {
-                    MessageBox.Show("Nama bengkel dan alamat tidak boleh kosong.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                string namaBengkel = txtNamaBengkel.Text;
-                string alamat = txtAlamat.Text;
-                string jamBuka = txtJamBuka.Text;
-                string jamTutup = txtJamTutup.Text;
-                string username = LoginSession.Username;
-                string password = LoginSession.Password;
-                int id_bengkel = LoginSession.BengkelId;
-
-                bengkelContext.UpdateDataBengkel(id_bengkel, namaBengkel, alamat, jamBuka, jamTutup);
-                bengkelContext.Deletedetail(id_bengkel);
-
-                List<int> listLayanan = new List<int>();
-                if (cbServisRutin.Checked) { listLayanan.Add(1); }
-                if (cbGantiOli.Checked) { listLayanan.Add(2); }
-                if (cbServisGaransi.Checked) { listLayanan.Add(3); }
-                if (cbServisDarurat.Checked) { listLayanan.Add(4); }
-
-                for (int i = 0; i < listLayanan.Count; i++) { bengkelContext.TambahLayananBengkel(id_bengkel, listLayanan[i]); }
-
-                List<int> listKendaraan = new List<int>();
-                if (cbMobil.Checked) { listKendaraan.Add(1); }
-                if (cbSepedaMotor.Checked) { listKendaraan.Add(2); }
-                if (cbKendaraanBesar.Checked) { listKendaraan.Add(3); }
-
-                for (int i = 0; i < listKendaraan.Count; i++) { bengkelContext.TambahKendaraan(id_bengkel, listKendaraan[i]); }
-
-                MessageBox.Show("Data berhasil disimpan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                HomePageBengkel homePage = new HomePageBengkel();
-                this.Close();
-                homePage.Show();
-            }
-
-            catch
-            {
-                MessageBox.Show("Gagal menyimpan data.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
+            LihatJadwalServis jadwal = new LihatJadwalServis();
+            jadwal.Show();
+            this.Hide();
         }
 
         private void bt_kembali_Click(object sender, EventArgs e)
         {
-            KelolaDataBengkel_View_ showData = new KelolaDataBengkel_View_();
-            showData.Show();
-            this.Close();
+            HomePageBengkel homePage = new HomePageBengkel();
+            homePage.Show();
+            this.Hide();
         }
 
-        private void C3_servisGaransi_CheckedChanged(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void L5_Pengelola_CheckedChanged(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -185,36 +160,28 @@ namespace BengkelinAja___Final_Project.View
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void L3_Pengelola_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
+        private void L1_Pengelola_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void bt_edit_Click_1(object sender, EventArgs e)
         {
-
+            KelolaDataBengkel_Edit_ EditDataBengkel = new KelolaDataBengkel_Edit_();
+            this.Close();
+            EditDataBengkel.Show();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void bt_kembali_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void KelolaDataBengkel_Edit__Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            LihatJadwalServis jadwal = new LihatJadwalServis();
-            jadwal.Show();
-            this.Show();
+            HomePageBengkel HalUtama = new HomePageBengkel();
+            this.Close();
+            HalUtama.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -224,6 +191,5 @@ namespace BengkelinAja___Final_Project.View
             this.Hide();
         }
     }
+
 }
-
-
