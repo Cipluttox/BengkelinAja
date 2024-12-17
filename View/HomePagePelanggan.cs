@@ -8,14 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BengkelinAja.View
+namespace BengkelinAja___Final_Project.View
 {
-    public partial class HomePage_Pelanggan : Form
+    public partial class HomePagePelanggan : Form
     {
-        public HomePage_Pelanggan()
+        public HomePagePelanggan()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+
         }
+
         private void bt_PesanBengkel_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -31,6 +34,14 @@ namespace BengkelinAja.View
         }
 
         private void bt_Logout_Click(object sender, EventArgs e)
+        {
+            Form1 landingPage = new Form1();
+            this.Close();
+            landingPage.Show();
+            MessageBox.Show("Anda berhasil logout");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             Form1 landingPage = new Form1();
             this.Close();
