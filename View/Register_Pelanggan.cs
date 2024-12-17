@@ -1,4 +1,4 @@
-﻿using BengkelinAja.Context;
+using BengkelinAja___Final_Project.Context;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,15 +10,19 @@ using Npgsql;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using BengkelinAja.Model;
+using BengkelinAja___Final_Project.Model;
+using BengkelinAja___Final_Project.View;
 
-namespace BengkelinAja.View
+namespace BengkelinAja___Final_Project.View
 {
     public partial class Register_Pelanggan : Form
-    {   
+    {
         public Register_Pelanggan()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.BackColor = Color.Transparent;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -28,7 +32,8 @@ namespace BengkelinAja.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            var pelangganContext = new PelangganContext();
+
             M_Pelanggan.dataAkun pelangganBaru = new M_Pelanggan.dataAkun
             {
                 nama_pelanggan = tbpNamaLengkap.Text,
@@ -46,25 +51,24 @@ namespace BengkelinAja.View
             }
             else
             {
-                PelangganContext.RegisterPelanggan(pelangganBaru);
+                pelangganContext.RegisterPelanggan(pelangganBaru);
                 MessageBox.Show("Berhasil register");
             }
-
             this.DialogResult = DialogResult.OK;
-            this.Hide();
+            this.Close();
 
-            HomePage_Pelanggan hpPelanggan = new HomePage_Pelanggan();
-            hpPelanggan.Show();
+            Login login = new Login();
+            login.Show();
         }
 
         // Validasi input
         private bool ValidateInput()
         {
-            return true; 
+            return true;
         }
         private void tbpNamaLengkap_TextChanged(object sender, EventArgs e)
         {
 
-        }
-    }
+        }
+    }
 }
