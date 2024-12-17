@@ -1,10 +1,10 @@
-﻿using Npgsql;
+using Npgsql;
 using System;
 using System.Data;
 
 namespace winform_mvc.App.Core
 {
-    internal class DatabaseWrapper
+    public class DatabaseWrapper
     {
         // Properti credential database dan koneksinya
         private static readonly string DB_HOST = "localhost";
@@ -77,6 +77,33 @@ namespace winform_mvc.App.Core
                 throw new Exception(e.Message);
             }
         }
+        //select integer
+        public static int queryExecutorInt(string query, NpgsqlParameter[] parameters = null)
+        {
+            try
+            {
+                openConnection(); // Membuka koneksi
+                command.CommandText = query; // Menetapkan query pada command
+
+                if (parameters != null)
+                {
+                    command.Parameters.AddRange(parameters); // Menambahkan parameter ke command
+                    command.Prepare(); // Menyiapkan query
+                }
+
+                var result = command.ExecuteScalar(); // Mengambil hasil pertama dari query
+                closeConnection(); // Menutup koneksi setelah selesai
+
+                // Mengonversi hasil ke int jika tidak null, jika null kembalikan 0
+                return result != DBNull.Value ? Convert.ToInt32(result) : 0;
+            }
+            catch (Exception e)
+            {
+                // Menangani exception dan melempar ulang exception jika terjadi error
+                throw new Exception("Error saat mengeksekusi query: " + e.Message);
+            }
+        }
+
 
         private static string connString = "Host=localhost;Port=5432;Username=postgres;Password=12345;Database=BengkelinAja";
 
