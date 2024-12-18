@@ -13,5 +13,9 @@
     <PackageReference Include="Npgsql" Version="9.0.1" />
   </ItemGroup>
 
-  <!-- Hapus bagian EmbeddedResource untuk Resources.resx -->
+  <!-- Pastikan hanya ada satu deklarasi resource -->
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\RegisterPengelolaBengkel.resx" />
+  </ItemGroup>
+
 </Project>
