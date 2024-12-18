@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="View\HomePageBengkel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\HomePagePelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\KelolaDataBengkel%28Edit%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\KelolaDataBengkel%28View%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Landing Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\LihatJadwalServis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\LihatLayananAntarJemput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\PemesananLayananBengkel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\PopupBengkel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\RegisterPengelolaBengkel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Register_Pelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Riwayat Pemesanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
