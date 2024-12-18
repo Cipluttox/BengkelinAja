@@ -17,6 +17,7 @@ namespace BengkelinAja___Final_Project.View
         public HomePageBengkel()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void bt_KelolaData_Click(object sender, EventArgs e)
@@ -40,19 +41,13 @@ namespace BengkelinAja___Final_Project.View
             antarJemput.Show();
         }
 
-        private void bt_KonfirmBayar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            KonfirmasiPembayaran konfirmBayar = new KonfirmasiPembayaran();
-            konfirmBayar.Show();
-        }
-
         private void bt_Logout_Click(object sender, EventArgs e)
         {
             Form1 landingPage = new Form1();
             this.Close();
             landingPage.Show();
             MessageBox.Show("Anda berhasil logout");
+            //Application.Exit();
         }
     }
 }
