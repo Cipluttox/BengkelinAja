@@ -1,72 +1,71 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static BengkelinAja.Model.M_Bengkel;
 
-namespace BengkelinAja.Model
+namespace BengkelinAja___Final_Project.Model
 {
-    public class M_Bengkel
+    public abstract class M_Bengkel
     {
-        public class DataBengkel
+        public abstract class DataBengkel
         {
             [Key]
             public int id_bengkel { get; set; }
+
             [Required]
             public string nama_bengkel { get; set; }
+
             [Required]
             public string nama_pemilik { get; set; }
+
             [Required]
             public string alamat_pemilik { get; set; }
+
             [Required]
             public string username { get; set; }
+
             [Required]
-            public string password { get; set; }    
+            public string password { get; set; }
+
             [Required]
             public string email { get; set; }
+
             [Required]
             public string no_telp { get; set; }
+
             [Required]
             public string alamat_bengkel { get; set; }
+
             [Required]
             public TimeOnly jam_buka { get; set; }
+
             [Required]
-            public TimeOnly jam_tutup {  get; set; }
+            public TimeOnly jam_tutup { get; set; }
+
             public List<layanan> Layanans { get; set; }
         }
-        public class metodePembayaran
-        {
-            [Key]
-            public int id_metode { get; set; }
-            [Required]
-            public string metode_pembayaran { get; set; }
-        }
-        public class statusPembayaran
-        {
-            [Key]
-            public int id_status { get; set; }
-            [Required]
-            public string status_pembayaran { get; set; }
-        }
-        public class jenisKendaraan
+
+        public abstract class jenisKendaraan
         {
             [Key]
             public int id_kendaraan { get; set; }
+
             [Required]
             public string jenis_kendaraan { get; set; }
         }
-        public class layanan
+
+        public abstract class layanan
         {
             [Key]
             public int id_layanan { get; set; }
+
             [Required]
             public string nama_layanan { get; set; } // Ganti dari List<string> ke string
         }
-
-
-
-
-    } 
+        public class ConcreteDataBengkel : M_Bengkel.DataBengkel
+        {
+        }
+    }
 }
