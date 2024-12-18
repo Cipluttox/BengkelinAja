@@ -1,0 +1,102 @@
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.exe
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.dll
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\Npgsql.dll
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.deps.json
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.runtimeconfig.json
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.pdb
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.csproj.AssemblyReference.cache
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.Properties.Resources.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.HomePageBengkel.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.HomePagePelanggan.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.KelolaDataBengkel_Edit_.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.KelolaDataBengkel_View_.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.Form1.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.LihatJadwalServis.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.LihatLayananAntarJemput.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.Login.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.PemesananLayananBengkel.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.PopupBengkel.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.RegisterPengelolaBengkel.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.Register_Pelanggan.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.Riwayat_Pemesanan.resources
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.csproj.GenerateResource.cache
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.GeneratedMSBuildEditorConfig.editorconfig
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.AssemblyInfoInputs.cache
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.AssemblyInfo.cs
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.csproj.CoreCompileInputs.cache
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\Bengkeli.0835E104.Up2Date
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.dll
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\refint\BengkelinAja - Final Project.dll
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.pdb
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.genruntimeconfig.cache
+E:\Semester 3\Projek Akhir PBO\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\ref\BengkelinAja - Final Project.dll
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.csproj.AssemblyReference.cache
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.dll
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\refint\BengkelinAja - Final Project.dll
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.pdb
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.Properties.Resources.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.HomePageBengkel.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.HomePagePelanggan.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.KelolaDataBengkel_Edit_.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.KelolaDataBengkel_View_.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.Form1.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.LihatJadwalServis.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.LihatLayananAntarJemput.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.Login.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.PemesananLayananBengkel.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.PopupBengkel.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.RegisterPengelolaBengkel.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.Register_Pelanggan.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.Riwayat_Pemesanan.resources
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.csproj.GenerateResource.cache
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.AssemblyInfoInputs.cache
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.AssemblyInfo.cs
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.exe
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.deps.json
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.runtimeconfig.json
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.dll
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.pdb
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\Bengkeli.0835E104.Up2Date
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.genruntimeconfig.cache
+C:\Users\ASUS\Downloads\BengkelinAja - Final Project-20241216T095605Z-001\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\ref\BengkelinAja - Final Project.dll
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.exe
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.deps.json
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.runtimeconfig.json
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.dll
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\BengkelinAja - Final Project.pdb
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\bin\Debug\net8.0-windows\Npgsql.dll
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.csproj.AssemblyReference.cache
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.Properties.Resources.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.HomePageBengkel.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.HomePagePelanggan.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.KelolaDataBengkel_Edit_.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.KelolaDataBengkel_View_.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.Form1.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.LihatJadwalServis.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.LihatLayananAntarJemput.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.Login.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.PemesananLayananBengkel.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.PopupBengkel.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.RegisterPengelolaBengkel.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.Register_Pelanggan.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja___Final_Project.View.Riwayat_Pemesanan.resources
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.csproj.GenerateResource.cache
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.AssemblyInfoInputs.cache
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.AssemblyInfo.cs
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.csproj.CoreCompileInputs.cache
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\Bengkeli.0835E104.Up2Date
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.dll
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\refint\BengkelinAja - Final Project.dll
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.pdb
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\BengkelinAja - Final Project.genruntimeconfig.cache
+C:\Users\asus\Downloads\BengkelinAja - Final Project - End\BengkelinAja - Final Project-End\BengkelinAja - Final Project\BengkelinAja - Final Project\obj\Debug\net8.0-windows\ref\BengkelinAja - Final Project.dll
