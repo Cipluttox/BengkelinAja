@@ -43,6 +43,7 @@ namespace BengkelinAja___Final_Project.View
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -172,11 +173,24 @@ namespace BengkelinAja___Final_Project.View
             pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
             // 
+            // button2
+            // 
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Location = new Point(548, 366);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 26);
+            button2.TabIndex = 34;
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Register_Pelanggan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 406);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(tbpPassword);
             Controls.Add(tbpUsername);
@@ -214,5 +228,6 @@ namespace BengkelinAja___Final_Project.View
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
-    }
+        private Button button2;
+    }
 }
