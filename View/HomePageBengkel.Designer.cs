@@ -33,7 +33,6 @@ namespace BengkelinAja___Final_Project.View
             pictureBox1 = new PictureBox();
             bt_LihatJadwalServis = new Button();
             bt_LayananAntarJemput = new Button();
-            bt_KonfirmBayar = new Button();
             bt_Logout = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -86,19 +85,6 @@ namespace BengkelinAja___Final_Project.View
             bt_LayananAntarJemput.UseVisualStyleBackColor = false;
             bt_LayananAntarJemput.Click += bt_LayananAntarJemput_Click;
             // 
-            // bt_KonfirmBayar
-            // 
-            bt_KonfirmBayar.BackColor = Color.DarkOrange;
-            bt_KonfirmBayar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bt_KonfirmBayar.ForeColor = Color.White;
-            bt_KonfirmBayar.Location = new Point(211, 348);
-            bt_KonfirmBayar.Name = "bt_KonfirmBayar";
-            bt_KonfirmBayar.Size = new Size(399, 52);
-            bt_KonfirmBayar.TabIndex = 4;
-            bt_KonfirmBayar.Text = "Konfirmasi Pembayaran";
-            bt_KonfirmBayar.UseVisualStyleBackColor = false;
-            bt_KonfirmBayar.Click += bt_KonfirmBayar_Click;
-            // 
             // bt_Logout
             // 
             bt_Logout.BackColor = Color.MediumBlue;
@@ -118,7 +104,6 @@ namespace BengkelinAja___Final_Project.View
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(bt_Logout);
-            Controls.Add(bt_KonfirmBayar);
             Controls.Add(bt_LayananAntarJemput);
             Controls.Add(bt_LihatJadwalServis);
             Controls.Add(bt_KelolaData);
@@ -135,7 +120,6 @@ namespace BengkelinAja___Final_Project.View
         private PictureBox pictureBox1;
         private Button bt_LihatJadwalServis;
         private Button bt_LayananAntarJemput;
-        private Button bt_KonfirmBayar;
         private Button bt_Logout;
     }
 }
